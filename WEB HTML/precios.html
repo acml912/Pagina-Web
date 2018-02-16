@@ -13,9 +13,18 @@
   </section>
   <br>
     <section>
-      <p id="parrafo1">Barra de pan:<input type="number" id="nombre" name="nombre"> <button onclick="pintaIVA(document.getElementById('nombre').value,'preciobarra');">Calcular</button></p> 
-      <p id="parrafo2">Vino:   6 <button onclick="pintaIVA(6,'preciovino');">Calcular</button> </p>  
-    <p id="parrafo3">Galletas:  4   <button onclick="pintaIVA(4,'preciogalletas');">Calcular</button></p> 
+      <p id="parrafo1">Barra de pan:
+        <input type="number" id="preciopan" style="width: 100px" placeholder="cantidad">
+        <button onclick="pintaIVA(document.getElementById('preciopan').value,'preciobarra');">Calcular</button>
+      </p> 
+      <p id="parrafo2">Vino:
+        <input type="number" id="preciov" style="width: 100px" placeholder="cantidad">
+        <button onclick="pintaIVA(document.getElementById('preciov').value,'preciovino');">Calcular</button>
+      </p>  
+      <p id="parrafo3">Galletas:
+        <input type="number" id="preciog" style="width: 100px" placeholder="cantidad">
+        <button onclick="pintaIVA(document.getElementById('preciog').value,'preciogalletas');">Calcular</button>
+      </p> 
   </section>
    <section>
     <p id="preciobarra"></p>
