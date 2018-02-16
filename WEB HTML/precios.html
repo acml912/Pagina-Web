@@ -1,0 +1,43 @@
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Ejemplo de JAVA">
+<meta name="keywords" content="HTML5, CSS3, JavaScript">
+<title>PRECIOS</title>
+<link rel="stylesheet" href="estilos.css">
+<script src="funcion.js"></script>
+</head>
+<body>
+  <section>
+      <p id="parrafoa"> PRECIOS DE PRODUCTOS</p> 
+  </section>
+  <br>
+    <section>
+      <p id="parrafo1">Barra de pan: 1 <button onclick="pintaIVA(1,'preciobarra');">Calcular</button></p> 
+      <p id="parrafo2">Vino:   6 <button onclick="pintaIVA(6,'preciovino');">Calcular</button> </p>  
+    <p id="parrafo3">Galletas:  4   <button onclick="pintaIVA(4,'preciogalletas');">Calcular</button></p> 
+  </section>
+   <section>
+    <p id="preciobarra"></p>
+     <p id="preciovino"></p>
+      <p id="preciogalletas"></p>
+     </section>
+      <section>
+          <p id="totaliva"> PRECIOS CON IVA </p>
+          <p id="totalivapan"></p>
+          <p id="totalivavino"></p>
+          <p id="totalivag"></p>
+      <script>
+        window.onload=function(){
+         var pan=1;
+         var vino=6;
+         var galletas=4;
+          //var elem=document.getElementById("totalivapan");
+           //elem.innerHTML="El IVA DEl PAN es "+IVA(pan);
+             var elem2=document.getElementById("totalivavino");
+            elem2.innerHTML="El IVA DEL VINO es "+IVA(vino);
+             var elem3=document.getElementById("totalivag");
+            elem3.innerHTML="El IVA DE GALLETAS es "+IVA(galletas); 
+        };
+     </script>
+      </section>
+</body>
