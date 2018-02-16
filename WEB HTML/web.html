@@ -1,16 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="description" content="Ejemplo de JAVA">
+<meta name="keywords" content="HTML5, CSS3, JavaScript">
+<title>Página web</title>
+<link rel="stylesheet" href="misestilos.css">
 <script src="funcion.js"></script>
-<link rel=¨stylesheet¨ href= ¨miestilo.css¨>
 </head>
 <body>
     <section>
+      <p id="parrafo1">HGH</p>
+      <p id="totaliva"></p>
      <script>
         window.onload=function(){
             var total=0;
+            var a=60;
             total=suma(14,39);
             total=total+suma(14,39);
             total=suma(134,1243);
-            alert("el total es "+total);
+           // var elem=document.getElementById("parrafo1");
+           // elem.innerHTML="El resultado es "+total);
+             var elem=document.getElementById("totaliva");
+            elem.innerHTML="El IVA es "+IVA(a);
             //saludo();
             //suma(13,48);
         };
