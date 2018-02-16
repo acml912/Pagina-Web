@@ -13,5 +13,5 @@ function totalconiva(a){
 function pintaIVA(pb,pos){
     var total= totalconiva(pb);
     var elem=document.getElementById(pos);
-    elem.innerHTML=total;
+    elem.innerHTML=total.toFixed(3);
 }

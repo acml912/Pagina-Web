@@ -5,6 +5,7 @@
 <title>PRECIOS</title>
 <link rel="stylesheet" href="estilos.css">
 <script src="funcion.js"></script>
+<link rel="icon" href="img/img.png" type="image/png" sizes="32x32">
 </head>
 <body>
   <section>
@@ -12,7 +13,7 @@
   </section>
   <br>
     <section>
-      <p id="parrafo1">Barra de pan: 1 <button onclick="pintaIVA(1,'preciobarra');">Calcular</button></p> 
+      <p id="parrafo1">Barra de pan:<input type="number" id="nombre" name="nombre"> <button onclick="pintaIVA(document.getElementById('nombre').value,'preciobarra');">Calcular</button></p> 
       <p id="parrafo2">Vino:   6 <button onclick="pintaIVA(6,'preciovino');">Calcular</button> </p>  
     <p id="parrafo3">Galletas:  4   <button onclick="pintaIVA(4,'preciogalletas');">Calcular</button></p> 
   </section>

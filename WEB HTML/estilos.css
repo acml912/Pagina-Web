@@ -2,7 +2,12 @@ p{
     color: red;
     font-size: 20px;
 }
-#parrafoa { color: yellow;
+#parrafoa { color:#0E561E;
+            text-align:center;
             font-size: 40px;
-            margin: 100px;
+            margin: 15px;
+     
+}
+body{
+    background-image: url(img/fondo.jpg);
 }
